@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metalúrgica Titan | Soluções Industriais de Precisão</title>
+    <meta name="description" content="Especialistas em usinagem, caldeiraria e corte a laser. Qualidade e precisão para a indústria pesada.">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .clip-diagonal {
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-slate-900/95 backdrop-blur-sm border-b border-slate-800 text-white transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <!-- Icon Logo -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                    </svg>
+                    <span class="font-bold text-2xl tracking-tight">TITAN<span class="text-orange-500">METAL</span></span>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#home" class="hover:text-orange-500 transition-colors font-medium">Início</a>
+                    <a href="#sobre" class="hover:text-orange-500 transition-colors font-medium">Sobre</a>
+                    <a href="#servicos" class="hover:text-orange-500 transition-colors font-medium">Serviços</a>
+                    <a href="#qualidade" class="hover:text-orange-500 transition-colors font-medium">Qualidade</a>
+                    <a href="#contato" class="bg-orange-600 hover:bg-orange-700 px-5 py-2.5 rounded-md font-bold transition-colors shadow-lg shadow-orange-600/20">Orçamento</a>
+                </div>
+
+                <!-- Mobile Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-300 hover:text-white focus:outline-none">
+                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-800 border-t border-slate-700">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-700 hover:text-orange-500">Início</a>
+                <a href="#sobre" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-700 hover:text-orange-500">Sobre</a>
+                <a href="#servicos" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-700 hover:text-orange-500">Serviços</a>
+                <a href="#qualidade" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-700 hover:text-orange-500">Qualidade</a>
+                <a href="#contato" class="block px-3 py-2 rounded-md text-base font-medium text-orange-500 font-bold">Solicitar Orçamento</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="relative bg-slate-900 h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Soldagem Industrial" class="w-full h-full object-cover opacity-40">
+            <div class="absolute inset-0 bg-gradient-to-b from-slate-900/80 via-slate-900/50 to-slate-900"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
+            <div class="inline-block mb-4 px-4 py-1 rounded-full border border-orange-500/30 bg-orange-500/10 backdrop-blur-md">
+                <span class="text-orange-400 font-semibold tracking-wide uppercase text-xs md:text-sm">Excelência em Metalurgia desde 1998</span>
+            </div>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white tracking-tight mb-6 leading-tight">
+                Moldando o Futuro com <br class="hidden md:block">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">Aço e Precisão</span>
+            </h1>
+            <p class="mt-4 text-xl text-slate-300 max-w-2xl mx-auto mb-10 font-light">
+                Soluções completas em usinagem, caldeiraria e estruturas metálicas para a indústria pesada, automotiva e construção civil.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#servicos" class="px-8 py-4 rounded bg-orange-600 text-white font-bold text-lg hover:bg-orange-700 transition transform hover:-translate-y-1 shadow-lg shadow-orange-600/25">
+                    Nossos Serviços
+                </a>
+                <a href="#contato" class="px-8 py-4 rounded border border-slate-500 text-white font-bold text-lg hover:bg-white hover:text-slate-900 transition transform hover:-translate-y-1">
+                    Fale com um Engenheiro
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="sobre" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                <div class="relative mb-12 lg:mb-0">
+                    <div class="absolute -top-4 -left-4 w-24 h-24 bg-orange-100 rounded-tl-3xl -z-10"></div>
+                    <img src="https://images.pexels.com/photos/4041948/pexels-photo-4041948.jpeg" alt="Fábrica Interna" class="rounded-lg shadow-2xl w-full object-cover h-[500px]">
+                    <div class="absolute -bottom-6 -right-6 bg-slate-900 p-6 rounded-lg shadow-xl text-white max-w-xs hidden md:block">
+                        <p class="text-4xl font-bold text-orange-500 mb-1">25+</p>
+                        <p class="text-sm font-medium uppercase tracking-wider text-slate-400">Anos de Experiência</p>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-orange-600 font-bold uppercase tracking-wide text-sm mb-2">Sobre a Titan Metal</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Líderes em Transformação de Metais</h3>
+                    <p class="text-slate-600 text-lg mb-6 leading-relaxed">
+                        Fundada com o objetivo de fornecer soluções metalúrgicas de alta performance, a Titan Metal se consolidou como referência no mercado nacional. Combinamos tecnologia de ponta com a expertise de profissionais altamente qualificados.
+                    </p>
+                    <p class="text-slate-600 text-lg mb-8 leading-relaxed">
+                        Nossa infraestrutura permite atender desde a prototipagem rápida até a produção em larga escala, sempre respeitando rigorosos padrões de qualidade e prazos de entrega.
+                    </p>
+                    
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center text-slate-700">
+                            <svg class="h-6 w-6 text-orange-500 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                            Certificação ISO 9001
+                        </li>
+                        <li class="flex items-center text-slate-700">
+                            <svg class="h-6 w-6 text-orange-500 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                            Equipamentos CNC de Última Geração
+                        </li>
+                        <li class="flex items-center text-slate-700">
+                            <svg class="h-6 w-6 text-orange-500 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                            Atendimento Personalizado
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="py-24 bg-slate-100 clip-diagonal pb-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-orange-600 font-bold uppercase tracking-wide text-sm mb-2">Nossas Especialidades</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-slate-900">Soluções Industriais Completas</h3>
+                <p class="mt-4 text-slate-600 max-w-2xl mx-auto">
+                    Oferecemos um portfólio diversificado de serviços para atender as demandas mais complexas do setor industrial.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden group">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.pexels.com/photos/7097316/pexels-photo-7097316.jpeg" alt="Corte a Laser" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-8">
+                        <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center text-orange-600 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-3">Corte a Laser</h4>
+                        <p class="text-slate-600">Precisão milimétrica em cortes de chapas de aço, alumínio e inox com tecnologia de fibra óptica.</p>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden group">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.pexels.com/photos/8865187/pexels-photo-8865187.jpeg" alt="Usinagem CNC" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-8">
+                        <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center text-orange-600 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-3">Usinagem CNC</h4>
+                        <p class="text-slate-600">Produção de peças complexas com alta repetibilidade e tolerâncias ajustadas para componentes mecânicos.</p>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden group">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Soldagem" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-8">
+                        <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center text-orange-600 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-3">Caldeiraria Pesada</h4>
+                        <p class="text-slate-600">Fabricação e montagem de estruturas metálicas, tanques, tubulações e equipamentos de grande porte.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats & Quality Banner -->
+    <section id="qualidade" class="py-20 bg-slate-900 text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-slate-700">
+                <div class="p-4">
+                    <div class="text-4xl font-bold text-orange-500 mb-2">ISO 9001</div>
+                    <div class="text-slate-400">Certificação de Qualidade</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl font-bold text-orange-500 mb-2">+500</div>
+                    <div class="text-slate-400">Projetos Entregues</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl font-bold text-orange-500 mb-2">5000m²</div>
+                    <div class="text-slate-400">Área Fabril</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl font-bold text-orange-500 mb-2">100%</div>
+                    <div class="text-slate-400">Compromisso com Prazo</div>
+                </div>
+            </div>
+            
+            <div class="mt-16 bg-slate-800 rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between border border-slate-700">
+                <div class="mb-6 md:mb-0 md:mr-8">
+                    <h3 class="text-2xl font-bold mb-2">Precisa de um projeto personalizado?</h3>
+                    <p class="text-slate-400">Nossa equipe de engenharia está pronta para analisar sua demanda.</p>
+                </div>
+                <a href="#contato" class="whitespace-nowrap bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-8 rounded-lg transition shadow-lg">
+                    Fazer Cotação
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid (Galeria) -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-slate-900">Em Produção</h2>
+                <p class="text-slate-600 mt-2">Um pouco do nosso dia a dia na fábrica.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 h-96 md:h-[500px]">
+                <div class="col-span-2 row-span-2 relative overflow-hidden rounded-lg group">
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Engenheira trabalhando">
+                    <div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition"></div>
+                </div>
+                <div class="col-span-1 row-span-1 relative overflow-hidden rounded-lg group">
+                    <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Peça Metal">
+                </div>
+                <div class="col-span-1 row-span-1 relative overflow-hidden rounded-lg group">
+                    <img src="https://images.pexels.com/photos/13944023/pexels-photo-13944023.jpeg" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Solda">
+                </div>
+                <div class="col-span-2 row-span-1 relative overflow-hidden rounded-lg group">
+                    <img src="https://images.pexels.com/photos/32845680/pexels-photo-32845680.jpeg" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="Fábrica">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <!-- Contact Info -->
+                <div>
+                    <h2 class="text-orange-600 font-bold uppercase tracking-wide text-sm mb-2">Fale Conosco</h2>
+                    <h3 class="text-4xl font-bold text-slate-900 mb-6">Entre em Contato</h3>
+                    <p class="text-slate-600 mb-8 text-lg">
+                        Estamos prontos para atender sua solicitação. Preencha o formulário ou utilize nossos canais diretos.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-orange-100 rounded-lg p-3">
+                                <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-bold text-slate-900">Localização</h4>
+                                <p class="text-slate-600">Av. das Indústrias, 1500 - Distrito Industrial<br>São Paulo - SP, 01234-567</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-orange-100 rounded-lg p-3">
+                                <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-bold text-slate-900">Telefone</h4>
+                                <p class="text-slate-600">(11) 99999-8888</p>
+                                <p class="text-slate-600">(11) 3333-4444</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-orange-100 rounded-lg p-3">
+                                <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-bold text-slate-900">Email</h4>
+                                <p class="text-slate-600">contato@titanmetal.com.br</p>
+                                <p class="text-slate-600">comercial@titanmetal.com.br</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl border border-slate-100">
+                    <form onsubmit="event.preventDefault(); alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="nome" class="block text-sm font-medium text-slate-700 mb-2">Nome Completo</label>
+                                <input type="text" id="nome" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition" placeholder="Seu nome" required>
+                            </div>
+                            <div>
+                                <label for="empresa" class="block text-sm font-medium text-slate-700 mb-2">Empresa</label>
+                                <input type="text" id="empresa" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition" placeholder="Nome da empresa">
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <label for="email" class="block text-sm font-medium text-slate-700 mb-2">Email Corporativo</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition" placeholder="seu@email.com" required>
+                        </div>
+                        <div class="mb-6">
+                            <label for="servico" class="block text-sm font-medium text-slate-700 mb-2">Interesse</label>
+                            <select id="servico" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition bg-white">
+                                <option>Corte a Laser</option>
+                                <option>Usinagem CNC</option>
+                                <option>Caldeiraria</option>
+                                <option>Projetos Especiais</option>
+                                <option>Outros</option>
+                            </select>
+                        </div>
+                        <div class="mb-6">
+                            <label for="mensagem" class="block text-sm font-medium text-slate-700 mb-2">Mensagem</label>
+                            <textarea id="mensagem" rows="4" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition" placeholder="Descreva sua necessidade..." required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-orange-600 text-white font-bold py-4 rounded-lg hover:bg-orange-700 transition duration-300 shadow-md">
+                            Enviar Solicitação
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white pt-16 pb-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                        </svg>
+                        <span class="font-bold text-xl tracking-tight">TITAN<span class="text-orange-500">METAL</span></span>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Comprometidos com a excelência industrial. Transformando matérias-primas em soluções duráveis e precisas para o mercado global.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Links Rápidos</h4>
+                    <ul class="space-y-2 text-slate-400">
+                        <li><a href="#home" class="hover:text-orange-500 transition">Início</a></li>
+                        <li><a href="#sobre" class="hover:text-orange-500 transition">A Empresa</a></li>
+                        <li><a href="#servicos" class="hover:text-orange-500 transition">Serviços</a></li>
+                        <li><a href="#contato" class="hover:text-orange-500 transition">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Serviços</h4>
+                    <ul class="space-y-2 text-slate-400">
+                        <li><a href="#" class="hover:text-orange-500 transition">Corte Laser</a></li>
+                        <li><a href="#" class="hover:text-orange-500 transition">Usinagem CNC</a></li>
+                        <li><a href="#" class="hover:text-orange-500 transition">Soldagem MIG/TIG</a></li>
+                        <li><a href="#" class="hover:text-orange-500 transition">Caldeiraria</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Horário</h4>
+                    <p class="text-slate-400 text-sm mb-2">Segunda a Sexta: 07:00 - 18:00</p>
+                    <p class="text-slate-400 text-sm">Sábado: 08:00 - 12:00</p>
+                    <div class="flex space-x-4 mt-6">
+                        <!-- Social Placeholders -->
+                        <a href="#" class="text-slate-400 hover:text-white transition"><span class="sr-only">Facebook</span><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"/></svg></a>
+                        <a href="#" class="text-slate-400 hover:text-white transition"><span class="sr-only">Instagram</span><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772 4.902 4.902 0 011.772-1.153c.636-.247 1.363-.416 2.427-.465C9.673 2.013 10.03 2 12.48 2h-.165zm-2.37 1.954c-2.29.105-3.004.312-3.626.554-.645.25-1.11.595-1.472.958-.363.363-.709.827-.958 1.472-.242.622-.449 1.336-.554 3.626-.105 2.316-.105 2.96 0 5.277.105 2.29.312 3.004.554 3.626.25.645.595 1.11.958 1.472.363.363.827.709 1.472.958.622.242 1.336.449 3.626.554 2.316.105 2.96.105 5.277 0 2.29-.105 3.004-.312 3.626-.554.645-.25 1.11-.595 1.472-.958.363-.363.709-.827.958-1.472.242-.622.449-1.336.554-3.626.105-2.316.105-2.96 0-5.277-.105-2.29-.312-3.004-.554-3.626-.25-.645-.595-1.11-.958-1.472-.363-.363-.827-.709-1.472-.958-.622-.242-1.336-.449-3.626-.554-2.316-.105-2.96-.105-5.277 0zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" /></svg></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 text-center text-slate-500 text-sm">
+                <p>&copy; 2023 Metalúrgica Titan. Todos os direitos reservados. Site Fictício.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+
+        // Navbar Scroll Effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-md');
+                navbar.classList.add('bg-slate-900/95');
+            } else {
+                navbar.classList.remove('shadow-md');
+                // Optional: make it more transparent at top if desired
+            }
+        });
+    </script>
+</body>
+</html>
